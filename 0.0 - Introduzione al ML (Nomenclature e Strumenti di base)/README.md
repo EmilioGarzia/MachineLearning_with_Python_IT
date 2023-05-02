@@ -28,13 +28,16 @@ ___
 ## Strumenti matematici di base
 Nel nostro codice di esempio abbiamo messo sotto esame solamente la ***features*** *"speed"* raccogliendo in un vettore la velocità di passaggio di ogni veicolo.
 A questo punto su questo insieme di dati possiamo matematicamente estrapolare alcune basilari informazioni come:
-#### **MEDIA** *(mean)*
+### **MEDIA** *(mean)*
 Molto semplicemente calcolare la media aritmetica, nel nostro caso data da:
 <span style="color:blue;">
+
 $$
 mean(speed) = \frac{99+86+87+88+111+86+103+87+94+78+77+85+86}{13}=89.77
 $$
+
 </span>
+
 ⚠: *In python possiamo calcolarci la media di un set di numeri utilizzando il metodo **"mean()"** di numpy.*
 
 ```python
@@ -42,13 +45,16 @@ import numpy as np
 speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 mean = np.mean(speed)
 ```
-#### **MEDIANO** *(median)*
+### **MEDIANO** *(median)*
 Il mediano è l'elemento che si trova nel mezzo del vettore di dati dopo averlo riordinato in ordine crescente, nel nostro caso il mediano equivale a:
 <span style="color:blue;">
+
 $$
-median(speed) = 77,78,85,86,86,86,\underline{\bold{87}},87,88,94,99,103,111 = 87
+median(speed) = 77,78,85,86,86,86,\underline{\textbf{87}},87,88,94,99,103,111 = 87
 $$
+
 </span>
+
 ⚠: *In python possiamo calcolarci il mediano di un set di numeri utilizzando il metodo **"median()"** di numpy, non è necessario riordinare il vettore, in quanto, sarà fatto automaticamente dal metodo.*
 ```python
 import numpy as np
@@ -56,13 +62,16 @@ speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 median = np.median(speed)
 ```
 
-#### **MODALITA'** *(mode)*
+### **MODALITA'** *(mode)*
 La *mode* è il valore che appare con maggior frequenza nella collezione di dati, nel nostro caso:
 <span style="color:blue;">
+
 $$
-mode(speed) = 99,\bold{\underline{86}},87,88,111,\bold{\underline{86}},103,87,94,78,77,85,\bold{\underline{86}} = 86
+mode(speed) = 99,\underline{\textbf{86}},87,88,111,\underline{\textbf{86}},103,87,94,78,77,85,\underline{\textbf{86}} = 86
 $$
+
 </span>
+
 ⚠: *La funzione **"mode()"** di **scipy.stats** ci permette di calcolarci proprio la modalità, in output ci verrà ritornato un oggetto che contiene il valore con la maggior frequenza e il numero di occorrenze di quest'ultimi.*
 ```python
 from scipy import stats
