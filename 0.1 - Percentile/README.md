@@ -29,10 +29,10 @@ Poniamo caso dunque che il nostro dataset sia del tipo:
 
 ## Percentile
 Nel caso del dataset di cui sopra potremmo utilizzare il percentile per rispondere alla domanda:
-> **Q:** Qual'è il 50° percentile del nostro dataset?
-**A:** La risposta a questa domanda è: 31.0
+> **Q:** Qual'è il 50° percentile del nostro dataset?\
+>**A:** La risposta a questa domanda è: 31.0
 
-Questo significa che il $50\%$ delle persone nella strada un'età pari o inferiore a $31$ anni.
+Questo significa che il $50\\%$ delle persone nella strada ha un'età pari o inferiore a $31$ anni.
 
 In definitiva possiamo dire che il percentile è un dato molto utile quando ragioniamo a livello statistico e ci permette di conoscere quale percentuale di valori è inferiore.
 
