@@ -28,6 +28,6 @@ plt.show()
 
 Nel codice di cui sopra abbiamo creato un istogramma con 100 barre, dopodiché, abbiamo mandato in output il grafico, il risultato finale dovrebbe essere un grafico del tipo:
 
-![istogramma](image\hist.png)
+![istogramma](image/hist.png)
 
 ⚠: *Ovviamente, essendo casuale la generazione di numeri il grafico nell'immagine varierà ad ogni run del programma.*
