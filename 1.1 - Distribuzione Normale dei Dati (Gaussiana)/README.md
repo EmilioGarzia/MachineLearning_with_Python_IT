@@ -19,7 +19,7 @@ plt.show()
 ```
 
 L'output che otterremo sarà un istogramma come quello di cui sotto:
-![istogramma_dati_normalizzati](image\istogramma.png)
+![istogramma_dati_normalizzati](image/istogramma.png)
 
 ## Differenza tra Distribuzione Uniforme e Distribuzione Normale (Gaussiana)
 La distribuzione dei dati è fondamentale, in quanto, determina quale algoritmo e quale approccio seguire per l'addestramento, tra le varie tipologie di distribuzione, quelle più importanti sono **uniforme** e **normale**.
