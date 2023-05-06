@@ -27,14 +27,7 @@ plt.plot(x,y)
 plt.show()
 ```
 
-L'output di questo codice sarà il medesimo dell'immagine di cui sopra, molto banalmente abbiamo inizializzato i valori 
-
-$ x $ 
-
-ed 
-
-$ y $ 
-
+L'output di questo codice sarà il medesimo dell'immagine di cui sopra, molto banalmente abbiamo inizializzato i valori $x$ ed $y$ 
 con lo stesso valore con un ciclo *for* dopodichè abbiamo mandato in *plot* i valori dei due vettori.
 
 ## Pendenza della retta *(slope)*
@@ -66,14 +59,14 @@ L'output di questo codice produrrà il seguente grafico:
 
 ![grafico lineare con slope fissato](image/linear_graph_with_slope.png)
 
-⚠: *Visivamente il grafico sembra essere lo stesso di prima, tuttavia, ci basta osservare l'asse $y$ per renderci conto che non è più uguale all'asse $x$.*
+⚠: *Visivamente il grafico sembra essere lo stesso di prima, tuttavia, ci basta osservare l'asse* $y$ *per renderci conto che non è più uguale all'asse* $x$ *.*
 
 Di seguito, un esempio di come apparirebbe il grafico in questione senza pendenza, quindi, ponendo $\color{#DC006C}slope=0.0$
 
 ![funzione lineare senza pendenza](image/no_slope.png)
 
 ## Intercetta della Retta *(intercept)*
-L'intercetta "$\textbf{b}$" è l'ultima variabile da aggiungere per rendere la nostra funzione una ***funzione lineare***, molto semplicemente tale valore determina il punto di partenza della nostra retta sul grafico, pertanto, possiamo riscrivere definitvamente la nostra funzione lineare come:
+L'intercetta $\textbf{b}$ è l'ultima variabile da aggiungere per rendere la nostra funzione una ***funzione lineare***, molto semplicemente tale valore determina il punto di partenza della nostra retta sul grafico, pertanto, possiamo riscrivere definitvamente la nostra funzione lineare come:
 
 $$
 \color{#DC006C}y=ax+\textbf{b}
@@ -105,7 +98,7 @@ Il codice in questione produrrà il seguente output:
 
 ![funzione lineare completa](image/complete_linear_graph.png)
 
-⚠: *Notare l'asse delle $y$ che partono da $7$, ovvero dal valore di ***intercetta*** da noi fissato.*
+⚠: *Notare l'asse delle* $y$ *che partono da* $7$ *, ovvero dal valore di ***intercetta*** da noi fissato.*
 
 ## Perchè devo conoscere la funzione lineare per imparare il Machine Learning?
 
