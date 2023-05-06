@@ -27,13 +27,21 @@ plt.plot(x,y)
 plt.show()
 ```
 
-L'output di questo codice sarà il medesimo dell'immagine di cui sopra, molto banalmente abbiamo inizializzato i valori $x$ ed $y$ con lo stesso valore con un ciclo *for* dopodichè abbiamo mandato in *plot* i valori dei due vettori.
+L'output di questo codice sarà il medesimo dell'immagine di cui sopra, molto banalmente abbiamo inizializzato i valori 
+
+$ x $ 
+
+ed 
+
+$ y $ 
+
+con lo stesso valore con un ciclo *for* dopodichè abbiamo mandato in *plot* i valori dei due vettori.
 
 ## Pendenza della retta *(slope)*
-Alla funzione di base di prima possiamo aggiungere una variabile $\bold{a}$, alterando il valore di questa variabile possiamo variare la pendenza della retta risultante, matematicamente possiamo descrivere tale funzione come: 
+Alla funzione di base di prima possiamo aggiungere una variabile $\textbf{a}$, alterando il valore di questa variabile possiamo variare la pendenza della retta risultante, matematicamente possiamo descrivere tale funzione come: 
 
 $$
-\color{#DC006C}y=\bold{a}x
+\color{#DC006C}y=\textbf{a}x
 $$
 
 Per implementare tale funzione in *python* ci basterà moltiplicare ogni valore di $y$ per il valore di *slope* da noi precedentemente definito:
@@ -65,10 +73,10 @@ Di seguito, un esempio di come apparirebbe il grafico in questione senza pendenz
 ![funzione lineare senza pendenza](image/no_slope.png)
 
 ## Intercetta della Retta *(intercept)*
-L'intercetta "$\bold{b}$" è l'ultima variabile da aggiungere per rendere la nostra funzione una ***funzione lineare***, molto semplicemente tale valore determina il punto di partenza della nostra retta sul grafico, pertanto, possiamo riscrivere definitvamente la nostra funzione lineare come:
+L'intercetta "$\textbf{b}$" è l'ultima variabile da aggiungere per rendere la nostra funzione una ***funzione lineare***, molto semplicemente tale valore determina il punto di partenza della nostra retta sul grafico, pertanto, possiamo riscrivere definitvamente la nostra funzione lineare come:
 
 $$
-\color{#DC006C}y=ax+\bold{b}
+\color{#DC006C}y=ax+\textbf{b}
 $$
 
 Possiamo implementare definitivamente la nostra funzione come codice *python*:
