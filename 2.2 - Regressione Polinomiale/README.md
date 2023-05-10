@@ -169,6 +169,7 @@ R2 = r2_score(speed, mymodel(time))
 Otterremo come output i seguenti risultati
 
 `R2 = 0.922 con M=3`
+
 `R2 = 0.998 con M=16`
 
 Si noti come con `M=3` il valore sia molto vicino a `1` e quindi il modello risulta essere molto accurato, d'altro canto con `M=16` il modello risulta essere troppo accurato in quanto `R2` risulta essere estremamente vicino a `1` e quindi vi sono altissime probabilità di avere un modello che soffra di *overfitting*.
