@@ -147,39 +147,7 @@ L'output del codice di cui sopra produce un grafico in cui individuiamo in:
 
 ![grafico con predizione](image/prediction.png)
 
-## Quando la regressione lineare non è una buona scelta
-
-La regressione lineare è applicabile quando appunto i dati contenuti nel dataset sono distribuiti in maniera lineare, dunque, quando la ***relazione*** tra i dati del dataset ottenuta dalla funzione *linregress()* è un valore vicino a $1$ o $-1$, qualora questa relazione fosse vicina allo zero, allora, non c'è relazione tra le variabili, dunque, è sconsigliato un approccio con regressione lineare.
-
-In questo esercizio abbiamo volutamente implementato un set di dati basato su due *features (variabili)* la cui distribuzione non è per nulla lineare, i dati in questione sono:
-
-||||||||||||||||||||||
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|$\color{#DC0066}x$|89|43|36|36|95|10|66|34|38|20|26|29|48|64|6|5|36|66|72|40|
-|$\color{#DC0066}y$|21|46|3|35|67|95|53|72|58|10|26|34|90|33|38|20|56|2|47|15|
-
-Possiamo mandare a schermo con *python* la distribuzione di questi dati e la loro rispettiva linea di regressione lineare con il codice:
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy import stats
-x = np.array([89,43,36,36,95,10,66,34,38,20,26,29,48,64,6,5,36,66,72,40])
-y = np.array([21,46,3,35,67,95,53,72,58,10,26,34,90,33,38,20,56,2,47,15])
-
-slope, intercept, r, p, std_err = stats.linregress(x,y)
-plt.scatter(x,y)
-plt.plot(x, slope*x+intercept, c="red")
-plt.show()
-```
-
-Il grafico che otterremo sarà il seguente:
-
-![dati non lineari](image/nonLinear.png)
-
-Già ad una prima occhiata visiva ci si rende conto che la distribuzione non è affatto lineare e a confermare tale ipotesi vi è anche la retta della regressione lineare che ha una pendenza prossima allo $0$, inoltre, anche il coefficiente di correlazione di Pearson `r` è estremamente vicino allo $0$, infatti, nel nostro caso: $\color{#DC0066}r=0.013$ e questo dato è un ulteriore indice di poca linearità, dunque, a questo giro non possiamo affidarci alla regressione lineare.
-
-### Approfondimenti: Indice di correlazione di Pearson ($r$)
+## Approfondimenti: Indice di correlazione di Pearson ($r$)
 
 Il valore della variabile `r` esprime l'*indice di correlazione di Perason*, tale valore esprime proprio l'eventuale relazione di linearità tra due variabili e come già detto nell'esercizio precedente il suo valore è un numero reale compreso nell'intervallo $[-1,1]$ dove: 
 
@@ -201,7 +169,7 @@ $$
 
 Dunque, possiamo tenere in considerazione tale valore per valutare se applicare o meno la regressione lineare.
 
-## Coefficiente di Determinazione ($R^2$)
+## Approfondimenti: Coefficiente di Determinazione ($R^2$)
 
 Il *coefficiente di determinazione* è un valore reale compreso nell'intervallo $[0,1]$ ed esprime la variabilità dei dati e la correttezza del modello che abbiamo scelto, molto semplicemente potremmo vedere questo valore come l'espressione della bontà della linea *(regressione lineare)* o della curva *(regressione polinomiale)* che abbiamo utilizzato nel modello
 
@@ -238,3 +206,35 @@ slope, intercept, r, p, std_err = stats.linregress(x,y)
 r2 = r**2
 print(r2) 
 ```
+
+## Quando la regressione lineare non è una buona scelta
+
+La regressione lineare è applicabile quando appunto i dati contenuti nel dataset sono distribuiti in maniera lineare, dunque, quando la ***relazione*** tra i dati del dataset ottenuta dalla funzione *linregress()* è un valore vicino a $1$ o $-1$, qualora questa relazione fosse vicina allo zero, allora, non c'è relazione tra le variabili, dunque, è sconsigliato un approccio con regressione lineare.
+
+In questo esercizio abbiamo volutamente implementato un set di dati basato su due *features (variabili)* la cui distribuzione non è per nulla lineare, i dati in questione sono:
+
+||||||||||||||||||||||
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|$\color{#DC0066}x$|89|43|36|36|95|10|66|34|38|20|26|29|48|64|6|5|36|66|72|40|
+|$\color{#DC0066}y$|21|46|3|35|67|95|53|72|58|10|26|34|90|33|38|20|56|2|47|15|
+
+Possiamo mandare a schermo con *python* la distribuzione di questi dati e la loro rispettiva linea di regressione lineare con il codice:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import stats
+x = np.array([89,43,36,36,95,10,66,34,38,20,26,29,48,64,6,5,36,66,72,40])
+y = np.array([21,46,3,35,67,95,53,72,58,10,26,34,90,33,38,20,56,2,47,15])
+
+slope, intercept, r, p, std_err = stats.linregress(x,y)
+plt.scatter(x,y)
+plt.plot(x, slope*x+intercept, c="red")
+plt.show()
+```
+
+Il grafico che otterremo sarà il seguente:
+
+![dati non lineari](image/nonLinear.png)
+
+Già ad una prima occhiata visiva ci si rende conto che la distribuzione non è affatto lineare e a confermare tale ipotesi vi è anche la retta della regressione lineare che ha una pendenza prossima allo $0$, inoltre, anche il coefficiente di correlazione di Pearson `r` è estremamente vicino allo $0$, infatti, nel nostro caso: $\color{#DC0066}r=0.013$ e questo dato è un ulteriore indice di poca linearità, dunque, a questo giro non possiamo affidarci alla regressione lineare.
