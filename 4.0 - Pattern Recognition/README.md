@@ -31,7 +31,7 @@ ax.scatter(xPoints, yPoints)
 plt.show()
 ```
 
-Nel nostro caso abbiamo utilizzato valori fissi per la la slope `a` e per intercetta `b` della nostra funzione lineare $\color{#dc0066}y=ax+b$, tuttavia, in uno scenario reale utilizzaremmo la regressione lineare e dunque una retta lineare con intercetta e slope adeguari alla classificazione che ci interessa eseguire.
+Nel nostro caso abbiamo utilizzato valori fissi per la la slope `a` e per la intercetta `b` della nostra funzione lineare $\color{#dc0066}y=ax+b$, tuttavia, in uno scenario reale utilizzaremmo la regressione lineare e dunque una retta lineare con intercetta e slope adeguari alla classificazione che ci interessa eseguire.
 
 ## Scindiamo i punti al di sopra e al di sotto della retta lineare
 
