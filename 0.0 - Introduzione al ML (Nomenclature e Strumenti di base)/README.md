@@ -56,7 +56,7 @@ speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 median = np.median(speed)
 ```
 
-### **MODA'** *(mode)*
+### **MODA** *(mode)*
 La *mode* è il valore che appare con maggior frequenza nella collezione di dati, nel nostro caso:
 
 $$
