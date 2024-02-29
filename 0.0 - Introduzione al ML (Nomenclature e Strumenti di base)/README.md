@@ -63,7 +63,7 @@ $$
 \color{#DC006C}mode(speed) = 99,\underline{\textbf{86}},87,88,111,\underline{\textbf{86}},103,87,94,78,77,85,\underline{\textbf{86}} = 86
 $$
 
-⚠: *La funzione **"mode()"** di **scipy.stats** ci permette di calcolarci proprio la modalità, in output ci verrà ritornato un oggetto che contiene il valore con la maggior frequenza e il numero di occorrenze di quest'ultimi.*
+⚠: *La funzione **"mode()"** di **scipy.stats** ci permette proprio di calcolare la moda, in output ci verrà ritornato un oggetto che contiene il valore con la maggior frequenza e il numero di occorrenze di quest'ultimi.*
 ```python
 from scipy import stats
 speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
